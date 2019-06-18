@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'alice';
+  font-style: normal;
+  font-weight: normal;
+  src: local('alice'),
+       url('../font/alice.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
+body, html{
+  margin: 0;
+  padding: 0
+}

@@ -1,0 +1,94 @@
+*{
+	backface-visibility: hidden;
+}
+html, body {
+ 	background-color: #D9D9D9;
+	height: 100vh;
+	overflow-y: scroll;	
+}
+body{
+	overflow-y: scroll;
+
+}
+div, ul, li, nav{
+	box-sizing: border-box;	
+}
+.app{
+ 	 display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center; 
+	min-height: 100vh;
+
+	& > *{ //get all the chield elements
+		display: none;
+		&:last-child{
+			display: block;
+		}
+	}
+	& > .home {
+		transition: width 300ms ease-in-out;
+		& > img.logo1{
+			display: block;
+			padding-bottom: 32px;
+		}
+		& > ul{
+			max-width: 165px;
+			margin: 0 auto;
+		}
+	}
+	& > .content {
+		transition: width 300ms ease-in-out;
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+
+@media only screen and (min-width:"960px"){	
+	.app{
+		display: block;
+		& > *{
+			display: block;
+			width: 50vw;
+			position: absolute;
+			&.home{
+				position: fixed;
+				left: 0;
+				top: 0;
+				min-height: 100vh;
+				display: flex;
+				flex-direction: column;
+				align-content: center;
+				align-items: center;
+				justify-content: center;
+				justify-items: center;
+				transition: width 300ms ease-in-out;
+				will-change: width;
+				&:last-child {
+					width: 100vw;
+				}
+				& > ul{
+					display: block;
+					margin: 0;
+					max-width: 165px;
+				}
+			}
+			&.content{
+				right: 0;
+				top: 0;
+				transition: transform 300ms ease-in-out, opacity 300ms linear;
+				&.loading{
+					transform: translateX(300px);
+					opacity: 0;
+				}
+				&.loaded{
+					transform: translateX(0);
+					opacity: 1;
+				}
+			}
+		}
+	}
+}

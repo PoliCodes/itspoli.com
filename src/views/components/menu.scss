@@ -1,0 +1,31 @@
+ul.menu1 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'alice' !important;
+    
+
+    &>li {
+        padding: 8px 0;
+
+        &>a {
+            text-decoration: none;
+            color: black;
+            font-size: 40px;
+            line-height: 130%;
+
+            &>.svg {
+                display: inline-block;
+                padding-right: 10px; 
+            }
+            &:hover {
+                cursor: pointer;
+                color: #E8387E;
+                & .svg {
+                    fill: #E8387E;
+                }
+            }
+        }
+
+    }
+}

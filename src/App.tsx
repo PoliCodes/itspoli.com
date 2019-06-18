@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './styles/app.scss';
+import Menu from './views/components/menu';
+import { Route, Link } from 'react-router-dom';
+import { AboutIndex } from './views/about/about-index';
+import { SkillsIndex } from './views/skills/skills-index';
+import { ContactIndex } from './views/contact/contact-index';
+import logo from "./images/logo.png";
+
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <nav className="home">
+        <Link to="/"><img className="logo1" alt="Logo" src={logo} /></Link>
+        <Menu></Menu>
+      </nav>
+
+      {/* Links routes */}
+      <Route path="/about-me" exact component={AboutIndex} />
+      <Route path="/skills" exact component={SkillsIndex} />
+      <Route path="/contact" exact component={ContactIndex} />
+
     </div>
   );
 }
