@@ -28,7 +28,7 @@ export class AboutIndex extends React.Component<Props, State> {
       <div className={`aboutMe content ${this.state.loaded ? "loaded" : "loading"}`}>
         <h1>About Me<Link to="/"><img className="icons" src={iconClose} alt="close"/></Link></h1>
         <p>
-          Experienced and skilled in Computer Repair, Technical Support, Web Development using HTML5, CSS3, SASS with knowledge in Javascript and React JS. Strong Organization and Team-oriented skills. Current finishing a
+          Experienced and skilled in Computer Repair, Technical Support, Web Development using HTML5, CSS3, SASS with knowledge in Javascript, React JS and Node JS. Strong Organization and Team-oriented skills. Current finishing a
           Diploma focused in Web and Mobile Application Development from CICCC - Cornerstone International Community College of Canada.
         </p>
       </div>

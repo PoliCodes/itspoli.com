@@ -5,7 +5,7 @@ import { Route, Link } from 'react-router-dom';
 import { AboutIndex } from './views/about/about-index';
 import { SkillsIndex } from './views/skills/skills-index';
 import { ContactIndex } from './views/contact/contact-index';
-import logo from "./images/logo.png";
+import logo from './images/logo.png';
 
 
 const App: React.FC = () => {

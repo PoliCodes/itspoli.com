@@ -34,11 +34,10 @@ export class ContactIndex extends React.Component<Props, State> {
     return (
       <div className={`contact content ${this.state.loaded ? "loaded" : "loading"}`}>
         <h1>Contact<Link to="/"><img className="icons" src={iconClose} alt="close" /></Link></h1>
-        {/* <h1>Contact<Link to="/"><svg className="icons" version="1.1" viewBox="0 0 512 512"><path d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z"/></svg></Link></h1> */}
         <p>
-          Fell free to send me a message. Here is my contact:
+          Fell free to contact me.
         </p>
-        <br />
+        {/* <br /> */}
         <p>Email: poli@itspoli.com</p>
         <p>Phone: (604) 704-6404</p>
         <br />
@@ -50,10 +49,10 @@ export class ContactIndex extends React.Component<Props, State> {
           <input type="submit" value="Send" />
         </form>
         <div className="social">
-          <a href="http://"><img className="git icons" alt="Github link" src={github} /></a>
-          <a href="http://"><img className="linkedin icons" alt="Linkedin link" src={linkedin} /></a>
-          <a href="http://"><img className="twitter icons" alt="Twitter link" src={twitter} /></a>
-          <a href="http://"><img className="facebook icons" alt="Facebook link" src={facebook} /></a>
+          <a href="https://github.com/itspoli" target="_blank" rel="noopener noreferrer"><img className="git icons" alt="Github link" src={github} /></a>
+          <a href="https://www.linkedin.com/in/itspoli/" target="_blank" rel="noopener noreferrer"><img className="linkedin icons" alt="Linkedin link" src={linkedin} /></a>
+          <a href="https://twitter.com/itspoli91" target="_blank" rel="noopener noreferrer"><img className="twitter icons" alt="Twitter link" src={twitter} /></a>
+          <a href="https://www.facebook.com/itspoli91" target="_blank" rel="noopener noreferrer"><img className="facebook icons" alt="Facebook link" src={facebook} /></a>
         </div>
       </div>
     );
