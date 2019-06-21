@@ -7,14 +7,12 @@ $icon-main-color: #aaa;
 html, body {
  	background-color: $main-color;
 	height: 100vh;
-	overflow: hidden;
+	overflow-x: hidden;
 	overflow-y: scroll;	
+	-webkit-overflow-scrolling: touch;
 	
 }
-body{
-	overflow-y: scroll;
 
-}
 div, ul, li, nav{
 	box-sizing: border-box;	
 }

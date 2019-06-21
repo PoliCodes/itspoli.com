@@ -20,6 +20,8 @@ $white: #fff;
             border-radius: 8px;
             font-weight: normal;
             width: 100%;
+            appearance: none;
+            -webkit-appearance: none;
         }
 
         &>input[type=text],
@@ -78,10 +80,6 @@ $white: #fff;
             -webkit-align-self: auto;
             -ms-flex-item-align: auto;
             align-self: auto;
-
-            // &>svg.icons {
-            //     display: block;
-            // }
         }
     }
 }
