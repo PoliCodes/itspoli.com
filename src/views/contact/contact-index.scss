@@ -4,7 +4,9 @@ $white: #fff;
 
 .contact {    
     background: url("../../images/bkg-clubs.png") bottom center no-repeat;
-     
+     & > .contact-p{
+         padding: 32px 0;
+     }
     &>form {
         padding-bottom: 32px;
 

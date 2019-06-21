@@ -19,7 +19,8 @@ h1 {
     line-height: 150%;
     color: $black;
     font-weight: normal;
-
+    margin: 0;
+    padding: 32px 0;
     &>a {
         display: block;
         float: right;
@@ -39,12 +40,15 @@ h1 {
     background-color: $internal-color !important;
     width: 100vw;
 
-    &>p {
+    & p {
+        box-sizing: border-box;
         font-size: 20px;
         line-height: 200%;
         font-weight: normal;
         color: $black;
         font-family: $font-default;
+        margin: 0;
+        // padding: 20px 0;
     }
 
     & .icons {
