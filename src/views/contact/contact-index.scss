@@ -79,9 +79,9 @@ $white: #fff;
             -ms-flex-item-align: auto;
             align-self: auto;
 
-            &>img.icons {
-                display: block;
-            }
+            // &>svg.icons {
+            //     display: block;
+            // }
         }
     }
 }
