@@ -1,85 +1,43 @@
 .skills {
-    background-image: url("../../images/bkg-spades.png");
-    background-position: bottom center;
-    background-repeat: no-repeat;       
-    & ul.progress {
-        display: block;
+    background: url("../../images/bkg-spades.png") bottom center no-repeat;
+
+    & ul {
         list-style: none;
         margin: 0;
         padding: 0;
-        width: 100%;
-        &>li {
-            padding-bottom: 32px;
-            & > span{
-                font-size: 20px;
-                line-height: 150%;
-                font-weight: normal;
-                color: #000;
-                font-family: Arial, Helvetica, sans-serif;
-            } 
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
 
-            &>.meter {
-                height: 18px;
-                position: relative;
-                background-color: #D8D8D8;
-                border-radius: 8px;
-                -moz-border-radius: 8px;
-                -webkit-border-radius: 8px;
+        &>li.icon {
+            box-sizing: border-box;
+            padding: 0 32px 32px 0;
 
-                &>.bar {
-                    display: block;
-                    height: 18px;
-                    border-radius: 8px;
-                    background-color: rgba(0,0,0,0.4);
-                    // background-color: rgb(232, 56, 126);
-                }
-
-                & .bar1 {
-                    width: 80%;
-                    background-color: #5F10B8;
-                }
-                
-                & .bar2 {
-                    width: 60%;
-                    background-color: #CD0094;
-                }
-                
-                & .bar3 {
-                    background-color: #FF216B;
-                    width: 20%;
-                }
-                
-                & .bar4 {
-                    width: 10%;
-                    background-color: #FF784B;
-                }
-                
-                & .bar5 {
-                    width: 8%;
-                    background-color: #FFBC45;
-                }
-                
-                & .bar6 {
-                    width: 5%;
-                    background-color: #F9F871;
-                }
-
-                & .bar7 {
-                    width: 80%;
-                }
-
-                & .bar8 {
-                    width: 80%;
-                }
-
-                & .bar9 {
-                    width: 80%;
-                }
-
-                & .bar10 {
-                    width: 20%;
-                }
+            &:last-child{
+                padding-right: 0;
             }
+            & > img{
+                display: block;
+                height: 80px;
+                width: auto;
+                fill: black;
+            }       
+           
 
         }
     }

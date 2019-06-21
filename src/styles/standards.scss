@@ -1,44 +1,76 @@
+$main-color: #FF647C;
+$internal-color: #FFF;
+$black: #000;
+$icon-main-color: #aaa;
+$font-default:  Arial, Helvetica, sans-serif;
+$font-alice: "alice";
+
+a{
+    display: block;
+    clear: both;
+    text-decoration: none;
+    line-height: 150%;
+    overflow: hidden;
+}
+
 h1 {
-    font-family: "alice";
+    font-family: $font-alice;
     font-size: 56px;
-    line-height: 130%;
-    color: #000;
+    line-height: 150%;
+    color: $black;
     font-weight: normal;
-    & > a{     
-        display: block;  
+
+    &>a {
+        display: block;
         float: right;
-        color: #000;      
-        text-decoration: none;     
-        line-height: 130%;   
-        &:hover{
-            color: rgb(232, 56, 126);
+        color: $black;
+
+        &:hover {
+            color: $main-color;
         }
     }
 }
 
-.content{
-    display: block;
+.content {
+    display: block !important;
     box-sizing: border-box;
     padding: 32px;
-    min-height: 100vh;
-    background-color: #E6E6E6;
+    min-height: 100vh;    
+    background-color: $internal-color !important;
     overflow: hidden;
+    width: 100vw;
 
-    & > p {
+    &>p {
         font-size: 20px;
-        line-height: 150%;
+        line-height: 200%;
         font-weight: normal;
-        color: #000;
-        font-family: Arial, Helvetica, sans-serif;
-    } 
-    & .icons{
+        color: $black;
+        font-family: $font-default;
+    }
+
+    & .icons {
         box-sizing: border-box;
-        // display: block;
         height: 32px;
         width: auto;
-        line-height: 130%;
+        line-height: 150%;
         enable-background: new 0 0 56 56;
-        fill: #000;   
-            
+        fill: $internal-color;
+
+        &:hover {
+            fill: $main-color;
+        }
+    }
+
+    & a {
+        & .iconClose {
+            display: block;
+            float: right;
+            fill: $icon-main-color;
+
+            &:hover {
+                cursor: pointer;
+                fill: $main-color;
+            }
+        }
     }
 }

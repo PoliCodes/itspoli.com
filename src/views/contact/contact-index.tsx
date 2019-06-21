@@ -4,7 +4,7 @@ import "./contact-index.scss";
 import { Link } from "react-router-dom";
 
 /** ICONS **/
-import iconClose from '../../images/close.svg';
+// import iconClose from '../../images/close.svg';
 import facebook from '../../images/facebook.svg';
 import github from '../../images/github.svg';
 import linkedin from '../../images/linkedin.svg';
@@ -33,9 +33,10 @@ export class ContactIndex extends React.Component<Props, State> {
   render() {
     return (
       <div className={`contact content ${this.state.loaded ? "loaded" : "loading"}`}>
-        <h1>Contact<Link to="/"><img className="icons" src={iconClose} alt="close" /></Link></h1>
+        <Link to="/"><svg className="iconClose" enable-background="new 0 0 100 100" version="1.1" viewBox="0 0 100 100" height="28px" width="28px"><polygon points="77.6,21.1 49.6,49.2 21.5,21.1 19.6,23 47.6,51.1 19.6,79.2 21.5,81.1 49.6,53 77.6,81.1 79.6,79.2   51.5,51.1 79.6,23 "/></svg></Link>
+        <h1>Contact</h1>
         <p>
-          Fell free to contact me.
+          Fell free to contact me. 
         </p>
         {/* <br /> */}
         <p>Email: poli@itspoli.com</p>

@@ -1,10 +1,15 @@
+$main-color: #FF647C;
+$black: #000;
+$icon-main-color: #aaa;
 *{
 	backface-visibility: hidden;
 }
 html, body {
- 	background-color: #D9D9D9;
+ 	background-color: $main-color;
 	height: 100vh;
+	overflow: hidden;
 	overflow-y: scroll;	
+	
 }
 body{
 	overflow-y: scroll;
@@ -33,9 +38,10 @@ div, ul, li, nav{
 		& > img.logo1{
 			display: block;
 			padding-bottom: 32px;
+			width: 100%;
 		}
 		& > ul{
-			max-width: 165px;
+			max-width: 180px;
 			margin: 0 auto;
 		}
 	}
@@ -72,14 +78,15 @@ div, ul, li, nav{
 				}
 				& > ul{
 					display: block;
-					margin: 0;
-					max-width: 165px;
+					margin: 0 auto;
+					max-width: 180px;
 				}
 			}
 			&.content{
 				right: 0;
 				top: 0;
 				transition: transform 300ms ease-in-out, opacity 300ms linear;
+				width: 50vw;
 				&.loading{
 					transform: translateX(300px);
 					opacity: 0;

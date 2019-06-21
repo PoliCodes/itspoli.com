@@ -1,3 +1,6 @@
+$black: #000;
+$white: #fff;
+
 ul.menu1 {
     list-style: none;
     margin: 0;
@@ -10,19 +13,21 @@ ul.menu1 {
 
         &>a {
             text-decoration: none;
-            color: black;
-            font-size: 40px;
+            color: $black;
+            font-size: 38px;
             line-height: 130%;
 
             &>.svg {
                 display: inline-block;
-                padding-right: 10px; 
+                padding-right: 18px; 
+                fill: $black;
+
             }
             &:hover {
                 cursor: pointer;
-                color: #E8387E;
+                color: $white;
                 & .svg {
-                    fill: #E8387E;
+                    fill: $white;
                 }
             }
         }
