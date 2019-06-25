@@ -1,3 +1,15 @@
 .aboutMe{
     background: url("../../images/bkg-heart.png") bottom center no-repeat;    
+    & > .perfil{
+        box-sizing: border-box;
+        display: block;
+        width: 180px;
+        margin: 0 auto;
+        padding-bottom: 32px;
+        & > img{
+            box-sizing: border-box;
+            border-radius: 50%;
+            width: 100%;
+        }
+    }
 }
